@@ -27,3 +27,12 @@ O aplicativo da Web não entende nenhum protocolo de área de trabalho remota. E
 Como um protocolo de interação e exibição remota, o Guacamole implementa um superconjunto de protocolos de desktop remoto existentes. Adicionar suporte para um determinado protocolo de área de trabalho remota (como RDP) ao Guacamole envolve escrever uma camada intermediária que "traduz" entre o protocolo de área de trabalho remota e o protocolo Guacamole. Implementar tal tradução não é diferente de implementar qualquer cliente nativo, exceto que esta implementação em particular é renderizada em um display remoto ao invés de um local.
 
 A camada intermediária que trata dessa tradução é o guacd.
+
+
+### Instalação
+
+yum -y install epel-release wget
+wget -O /etc/yum.repos.d/home:felfert.repo http://download.opensuse.org/repositories/home:/felfert/Fedora_19/home:felfert.repo
+yum -y install cairo-devel freerdp-devel gcc java-1.8.0-openjdk.x86_64 libguac libguac-client-rdp libguac-client-ssh libguac-client-vnc \
+libjpeg-turbo-devel libpng-devel libssh2-devel libtelnet-devel libvncserver-devel libvorbis-devel libwebp-devel openssl-devel pango-devel \
+pulseaudio-libs-devel terminus-fonts tomcat tomcat-admin-webapps tomcat-webapps uuid-devel
