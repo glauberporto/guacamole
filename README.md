@@ -29,7 +29,11 @@ Como um protocolo de interação e exibição remota, o Guacamole implementa um 
 A camada intermediária que trata dessa tradução é o guacd.
 
 
-### Instalação
+# Instalação 
+
+## CENTOS 7
+
+## Dependências de pacotes
 
 yum -y install epel-release wget
 
